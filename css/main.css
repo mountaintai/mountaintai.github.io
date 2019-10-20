@@ -297,7 +297,7 @@ td {
 .btn {
   background: #fff;
   border: 2px solid #555;
-  border-radius: 2px;
+  border-radius: 16px;
   color: #555;
   display: inline-block;
   font-size: 0.875em;
@@ -1146,7 +1146,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #4f46ff;
+  background: #f5ff04;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1396,9 +1396,10 @@ pre .javascript .function {
   }
 }
 .with-love {
-  color: #808080;
+  color: #ff0000;
   display: inline-block;
   margin: 0 5px;
+  animation: iconAnimate 1.33s ease-in-out infinite;
 }
 .powered-by,
 .theme-info {
@@ -2250,7 +2251,7 @@ ul.breadcrumb li + li:last-child {
 }
 .header-inner {
   background: #fff;
-  border-radius: initial;
+  border-radius: 16px;
   box-shadow: initial;
   overflow: hidden;
   padding: 0;
@@ -2285,7 +2286,7 @@ ul.breadcrumb li + li:last-child {
 }
 .content-wrap {
   background: #fff;
-  border-radius: initial;
+  border-radius: 16px;
   box-shadow: initial;
   box-sizing: border-box;
   float: right;
@@ -2471,7 +2472,7 @@ ul.breadcrumb li + li:last-child {
 }
 .sidebar-inner {
   background: #fff;
-  border-radius: initial;
+  border-radius: 16px;
   box-shadow: initial;
   box-sizing: border-box;
   color: #555;
