@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-21T07:58:17.932Z</updated>
+  <updated>2019-10-22T06:43:43.115Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何解决win10 Net framework 安装失败的问题</title>
+    <link href="http://yoursite.com/2019/10/22/net%20framework/"/>
+    <id>http://yoursite.com/2019/10/22/net framework/</id>
+    <published>2019-10-22T06:31:27.162Z</published>
+    <updated>2019-10-22T06:43:43.115Z</updated>
+    
+    <content type="html"><![CDATA[<p>精简版的win10经常缺失各种net framework框架，而net framework框架又是许多程序运行所必备的组件，因此解决此问题至关重要!</p><h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><ul><li>一个完整的win10安装镜像，可以从<a href="https://msdn.itellyou.cn/" target="_blank" rel="noopener">MSDN_i tell you</a>下载。</li><li>一段代码，<strong>注意此处的E需要修改成你电脑中加载镜像后的镜像盘符</strong>.<br><code>dism.exe /online /enable-feature /featurename:netfx3 /Source:E:\sources\sxs</code> </li></ul><a id="more"></a><h3 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h3><ol><li><p>加载win10.iso系统镜像。<br><img src="/2019/10/22/net%20framework/nfw1.png" alt="加载镜像"></p></li><li><p>打开powershell（管理员），复制代码 ，<strong>注意代码中E的替换</strong><br><img src="/2019/10/22/net%20framework/nfw2.png" alt="Powershell"></p></li><li><p>运行代码即可<br><img src="/2019/10/22/net%20framework/nfw3.png" alt="运行代码"></p></li></ol><h3 id="更多操作"><a href="#更多操作" class="headerlink" title="更多操作"></a>更多操作</h3><p>作者试验了多种方法，最终上述方法可行，希望可以帮助到您。如果此种方法不行，可参考<a href="https://zhuanlan.zhihu.com/p/33467631" target="_blank" rel="noopener">知乎</a>，祝顺利~</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;精简版的win10经常缺失各种net framework框架，而net framework框架又是许多程序运行所必备的组件，因此解决此问题至关重要!&lt;/p&gt;&lt;h3 id=&quot;准备&quot;&gt;&lt;a href=&quot;#准备&quot; class=&quot;headerlink&quot; title=&quot;准备&quot;&gt;&lt;/a&gt;准备&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;一个完整的win10安装镜像，可以从&lt;a href=&quot;https://msdn.itellyou.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;MSDN_i tell you&lt;/a&gt;下载。&lt;/li&gt;
+&lt;li&gt;一段代码，&lt;strong&gt;注意此处的E需要修改成你电脑中加载镜像后的镜像盘符&lt;/strong&gt;.&lt;br&gt;&lt;code&gt;dism.exe /online /enable-feature /featurename:netfx3 /Source:E:\sources\sxs&lt;/code&gt; &lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
