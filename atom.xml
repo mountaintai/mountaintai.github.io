@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-22T06:43:43.115Z</updated>
+  <updated>2019-10-23T09:11:00.929Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,59 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo博客的多终端管理常用命令，Push &amp; Pull</title>
+    <link href="http://yoursite.com/2019/10/23/Github-control/"/>
+    <id>http://yoursite.com/2019/10/23/Github-control/</id>
+    <published>2019-10-23T08:32:37.000Z</published>
+    <updated>2019-10-23T09:11:00.929Z</updated>
+    
+    <content type="html"><![CDATA[<p>Github page可以静态托管hexo生成的网页文件，因此可以把Hexo分割成<strong>静态网页文件</strong>和<strong>本地环境文件</strong>。我们就是要<strong>利用Github的分布式管理功能</strong>把本地环境文件托管到Github仓库中的一个分支上（hexo），以实现master存放静态网页文件，hexo存放本地环境文件。</p><h2 id="条件准备"><a href="#条件准备" class="headerlink" title="条件准备"></a>条件准备</h2><h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><ul><li>无论在任何终端，进行同步更新操作的前提就是部署工作环境，即需要安装node.js和git.exe。</li><li>已经与Github完成了对接和SSH认证，具体看<a href="https://mountaintai.github.io/2019/10/22/hexo-enter/" target="_blank" rel="noopener">入坑指南</a></li><li>在Github上新建分支Hexo，并设定为默认分支</li></ul><a id="more"></a><h3 id="与Github仓库对接"><a href="#与Github仓库对接" class="headerlink" title="与Github仓库对接"></a>与Github仓库对接</h3><p> 这里面一个很关键的隐藏文件夹 .git。是远程仓库和本地关联的标记文件！</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git init  初始化本地仓库 (如果从仓库中clone下来的，已经包含.git文件，不需此步）</span><br><span class="line">git remote add origin git@github.com:mountaintai/mountaintai.github.io  添加远程主机</span><br><span class="line">git remote rm origin  如果提示无法新建，可用此命令删除</span><br></pre></td></tr></table></figure><h2 id="Push（上传）-amp-Pull（下载）"><a href="#Push（上传）-amp-Pull（下载）" class="headerlink" title="Push（上传） &amp; Pull（下载）"></a>Push（上传） &amp; Pull（下载）</h2><h3 id="Push"><a href="#Push" class="headerlink" title="Push"></a>Push</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .   把所有的本地文件添加的缓存目录</span><br><span class="line">git commit -m <span class="string">"description"</span>   添加更细说明</span><br><span class="line">git push origin hexo:hexo   把本地的hexo推送到远端的hexo</span><br></pre></td></tr></table></figure><h3 id="Pull（下载）"><a href="#Pull（下载）" class="headerlink" title="Pull（下载）"></a>Pull（下载）</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git pull origin hexo:hexo   从远程仓库把分支拉下来并合并</span><br><span class="line">git pull   如果已经连接好，可以直接用此命令</span><br><span class="line">npm install  完善本地工作环境（新机器用）</span><br></pre></td></tr></table></figure><h2 id="多终端体会"><a href="#多终端体会" class="headerlink" title="多终端体会"></a>多终端体会</h2><p>无论是何种终端，首先就是环境的搭建。之后就利用Push和Pull的方法，进行Hexo分支的更新。<strong>推送文章前，先推送分支，之后在推送文章。</strong></p><h2 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h2><ul><li>如果Hexo分支有内容，建议新机器首先用git clone的方法下载到本地，然后npm install配置完整的工作环境，这样就可以直接实现push与pull命令的使用。而不用再次和远端建立联系。</li><li>清空Hexo ：git clone远程的hexo分支，然后把其中的文件全部删除，只保留.git（隐藏文件夹）。然后用push的方法推送，即可清空远程仓库。</li><li>Push&amp;Pull的用法详情，参考<a href="http://www.ruanyifeng.com/blog/2014/06/git_remote.html" target="_blank" rel="noopener">此篇文章</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Github page可以静态托管hexo生成的网页文件，因此可以把Hexo分割成&lt;strong&gt;静态网页文件&lt;/strong&gt;和&lt;strong&gt;本地环境文件&lt;/strong&gt;。我们就是要&lt;strong&gt;利用Github的分布式管理功能&lt;/strong&gt;把本地环境文件托管到Github仓库中的一个分支上（hexo），以实现master存放静态网页文件，hexo存放本地环境文件。&lt;/p&gt;&lt;h2 id=&quot;条件准备&quot;&gt;&lt;a href=&quot;#条件准备&quot; class=&quot;headerlink&quot; title=&quot;条件准备&quot;&gt;&lt;/a&gt;条件准备&lt;/h2&gt;&lt;h3 id=&quot;环境搭建&quot;&gt;&lt;a href=&quot;#环境搭建&quot; class=&quot;headerlink&quot; title=&quot;环境搭建&quot;&gt;&lt;/a&gt;环境搭建&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;无论在任何终端，进行同步更新操作的前提就是部署工作环境，即需要安装node.js和git.exe。&lt;/li&gt;
+&lt;li&gt;已经与Github完成了对接和SSH认证，具体看&lt;a href=&quot;https://mountaintai.github.io/2019/10/22/hexo-enter/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;入坑指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;在Github上新建分支Hexo，并设定为默认分支&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>github/hexo博客入坑指南</title>
+    <link href="http://yoursite.com/2019/10/22/hexo-enter/"/>
+    <id>http://yoursite.com/2019/10/22/hexo-enter/</id>
+    <published>2019-10-22T13:27:29.000Z</published>
+    <updated>2019-10-23T03:15:29.634Z</updated>
+    
+    <content type="html"><![CDATA[<p>感谢这个互联网时代，可以让每个人自由发挥！也感谢这个时代的大神，让小白可以拥有自己的博客！</p><h2 id="hexo本地环境搭建"><a href="#hexo本地环境搭建" class="headerlink" title="hexo本地环境搭建"></a>hexo本地环境搭建</h2><h3 id="基本环境介绍"><a href="#基本环境介绍" class="headerlink" title="基本环境介绍"></a>基本环境介绍</h3><ul><li>运行平台：windows10</li><li>node.js：version 9.11.1</li><li>git.exe :version 2.23.0</li><li>nodepad++: version 9.0 （用于编辑.yml文件）<br>node.js/git.exe可在<a href="https://pan.baidu.com/s/1ZLkLG6TpKPOYR6Iy5JtoMQ" target="_blank" rel="noopener">度盘</a>直接下载，提取码：t8rm。</li></ul><a id="more"></a><h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><ol><li>安装node.js，一路默认即可！</li><li>安装git.exe，一路默认即可！</li><li>安装nodepad++，一路默认即可！</li></ol><p>安装后在任意文件夹点击右键可出现下图：<br><img src="/2019/10/22/hexo-enter/1.jpg" alt="git bash here"></p><h3 id="安装hexo及npm组件"><a href="#安装hexo及npm组件" class="headerlink" title="安装hexo及npm组件"></a>安装hexo及npm组件</h3><ol><li>在任意硬盘下新建文件夹，作为博客的根目录，并进入该文件夹</li><li>在该文件中右键，并运行 Git Bash Here</li><li>安装hexo，运行如下命令（二选一即可）<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo --save</span><br><span class="line">npm i hexo-cli -g</span><br></pre></td></tr></table></figure></li></ol><blockquote><p><strong>坑1</strong>： 如果在bash命令行中无法运行npm相关命令，检查电脑全局环境变量配置<br><img src="/2019/10/22/hexo-enter/2.jpg" alt></p></blockquote><ol start="4"><li>初始化hexo环境，即可开始进行hexo博客的本地撰写（hexo g）和预览（hexo s）</li></ol><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure><h2 id="Github的连接与博客推送"><a href="#Github的连接与博客推送" class="headerlink" title="Github的连接与博客推送"></a>Github的连接与博客推送</h2><h3 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h3><p>注册Github账号，并新建库resporitory，命名为：你的用户名.github.io。新建库的setting中，下拉找到theme，选择任意主题即可，具体参考<a href="https://godweiyang.com/2018/04/13/hexo-blog/#toc-heading-1" target="_blank" rel="noopener">韦阳的博客</a>。</p><h3 id="Github连接"><a href="#Github连接" class="headerlink" title="Github连接"></a>Github连接</h3><ul><li><p>向Github自报家门，运行以下代码</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"你的Github用户名"</span></span><br><span class="line">git config --global user.email <span class="string">"你的Github邮箱</span></span><br></pre></td></tr></table></figure></li><li><p>本地ssh密钥生成与预览</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"your email"</span>   </span><br><span class="line">cat ~<span class="regexp">/.ssh/i</span>d_rsa.pub</span><br></pre></td></tr></table></figure><p>ssh的生成一路enter即可！</p></li><li><p>复制命令行中出现的密钥代码，粘贴到Github网站&gt;头像&gt;setting&gt;SSH and GPG keys&gt;SSH Keys，新建，标题任意，内容为命令行中带代码。<br><img src="/2019/10/22/hexo-enter/3.png" alt></p></li><li><p>验证是否成功</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure><p>验证成功，在命令中会有<strong>sucessfully</strong>的字样！</p></li></ul><blockquote><p><strong>坑2</strong>：在验证中会出现Are you sure you want to continue connecting (yes/no/[fingerprint])? 的提示，务必填写yes后，再enter，继续之后的操作！</p></blockquote><h3 id="Hexo博客推送"><a href="#Hexo博客推送" class="headerlink" title="Hexo博客推送"></a>Hexo博客推送</h3><ul><li>安装插件，如果没有反应，多试几次！<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git</span><br></pre></td></tr></table></figure></li><li>设置根目录下的_config.yml文件，在最后deploy处添加：<br>deploy:<br>空格空格 type:空格 git<br>空格空格repository:空格 <a href="https://github.com/你的用户名/你的用户名.github.io" target="_blank" rel="noopener">https://github.com/你的用户名/你的用户名.github.io</a><br>空格空格branch: 空格master</li></ul><h3 id="hexo写博客相关命令"><a href="#hexo写博客相关命令" class="headerlink" title="hexo写博客相关命令"></a>hexo写博客相关命令</h3><p>为了使图文并茂，此处需安装一个插件：npm install hexo-asset-image –save。</p><ul><li>博客新建：hexo new “title”</li><li>博客生成：hexo g</li><li>博客本地预览： hexo s</li><li>博客上传到Github： hexo d</li></ul><h2 id="最后，还会见"><a href="#最后，还会见" class="headerlink" title="最后，还会见"></a>最后，还会见</h2><ul><li>主题推荐<a href="https://github.com/theme-next/hexo-theme-next.git" target="_blank" rel="noopener">NEXT</a>，关于如何配置，我会在新的博客中记录。</li><li>搭建的过程看了许多大牛的文章，收益匪浅。尤其是<a href="https://godweiyang.com/2018/04/13/hexo-blog/#toc-heading-1" target="_blank" rel="noopener">韦阳的博客</a>还给予了微信的指导，十分感谢。本文也列出了我参考的博客文章，希望对其他人有所帮助。<ul><li><a href="https://www.simon96.online/2018/11/10/hexo-env/" target="_blank" rel="noopener">simon96</a></li><li><a href="http://eternalzttz.com/hexo-next.html" target="_blank" rel="noopener">eternalzttz</a></li><li><a href="https://io-oi.me/tech/hexo-next-optimization/" target="_blank" rel="noopener">reuixiy</a></li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;感谢这个互联网时代，可以让每个人自由发挥！也感谢这个时代的大神，让小白可以拥有自己的博客！&lt;/p&gt;&lt;h2 id=&quot;hexo本地环境搭建&quot;&gt;&lt;a href=&quot;#hexo本地环境搭建&quot; class=&quot;headerlink&quot; title=&quot;hexo本地环境搭建&quot;&gt;&lt;/a&gt;hexo本地环境搭建&lt;/h2&gt;&lt;h3 id=&quot;基本环境介绍&quot;&gt;&lt;a href=&quot;#基本环境介绍&quot; class=&quot;headerlink&quot; title=&quot;基本环境介绍&quot;&gt;&lt;/a&gt;基本环境介绍&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;运行平台：windows10&lt;/li&gt;
+&lt;li&gt;node.js：version 9.11.1&lt;/li&gt;
+&lt;li&gt;git.exe :version 2.23.0&lt;/li&gt;
+&lt;li&gt;nodepad++: version 9.0 （用于编辑.yml文件）&lt;br&gt;node.js/git.exe可在&lt;a href=&quot;https://pan.baidu.com/s/1ZLkLG6TpKPOYR6Iy5JtoMQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;度盘&lt;/a&gt;直接下载，提取码：t8rm。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="hexo 搭建" scheme="http://yoursite.com/tags/hexo-%E6%90%AD%E5%BB%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>如何解决win10 Net framework 安装失败的问题</title>
