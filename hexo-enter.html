@@ -58,12 +58,12 @@
 <meta property="og:site_name" content="空山新雨">
 <meta property="og:description" content="感谢这个互联网时代，可以让每个人自由发挥！也感谢这个时代的大神，让小白可以拥有自己的博客！hexo本地环境搭建基本环境介绍 运行平台：windows10 node.js：version 9.11.1 git.exe :version 2.23.0 nodepad++: version 9.0 （用于编辑.yml文件）node.js&#x2F;git.exe可在度盘直接下载，提取码：t8rm。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;hexo-enter.htm&#x2F;1.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;hexo-enter.htm&#x2F;2.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;hexo-enter.htm&#x2F;3.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;1.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2.jpg">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;3.png">
 <meta property="og:updated_time" content="2019-10-23T03:15:29.634Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;hexo-enter.htm&#x2F;1.jpg">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;1.jpg">
   <link rel="canonical" href="http://yoursite.com/hexo-enter">
 
 
@@ -308,7 +308,7 @@
 <li>安装git.exe，一路默认即可！</li>
 <li>安装nodepad++，一路默认即可！</li>
 </ol>
-<p>安装后在任意文件夹点击右键可出现下图：<br><img src="/hexo-enter.htm/1.jpg" alt="git bash here"></p>
+<p>安装后在任意文件夹点击右键可出现下图：<br><img src="1.jpg" alt="git bash here"></p>
 <h3 id="安装hexo及npm组件"><a href="#安装hexo及npm组件" class="headerlink" title="安装hexo及npm组件"></a>安装hexo及npm组件</h3><ol>
 <li>在任意硬盘下新建文件夹，作为博客的根目录，并进入该文件夹</li>
 <li>在该文件中右键，并运行 Git Bash Here</li>
@@ -317,7 +317,7 @@
 </li>
 </ol>
 <blockquote>
-<p><strong>坑1</strong>： 如果在bash命令行中无法运行npm相关命令，检查电脑全局环境变量配置<br><img src="/hexo-enter.htm/2.jpg" alt></p>
+<p><strong>坑1</strong>： 如果在bash命令行中无法运行npm相关命令，检查电脑全局环境变量配置<br><img src="2.jpg" alt></p>
 </blockquote>
 <ol start="4">
 <li>初始化hexo环境，即可开始进行hexo博客的本地撰写（hexo g）和预览（hexo s）</li>
@@ -332,7 +332,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"your email"</span>   </span><br><span class="line">cat ~<span class="regexp">/.ssh/i</span>d_rsa.pub</span><br></pre></td></tr></table></figure>
 <p>ssh的生成一路enter即可！</p>
 </li>
-<li><p>复制命令行中出现的密钥代码，粘贴到Github网站&gt;头像&gt;setting&gt;SSH and GPG keys&gt;SSH Keys，新建，标题任意，内容为命令行中带代码。<br><img src="/hexo-enter.htm/3.png" alt></p>
+<li><p>复制命令行中出现的密钥代码，粘贴到Github网站&gt;头像&gt;setting&gt;SSH and GPG keys&gt;SSH Keys，新建，标题任意，内容为命令行中带代码。<br><img src="3.png" alt></p>
 </li>
 <li><p>验证是否成功</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
