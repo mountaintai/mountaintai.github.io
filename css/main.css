@@ -1153,7 +1153,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff7896;
+  background: #d1e5ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1543,6 +1543,10 @@ pre .javascript .function {
 }
 .use-motion .collection-header {
   opacity: 0;
+}
+.post-body a {
+  color: #428bca;
+  font-weight: bold;
 }
 .posts-collapse {
   margin-left: 55px;
