@@ -1,7 +1,7 @@
 ---
 title: github/hexo博客入坑指南
 date: 2019-10-22 21:27:29
-tags: hexo 搭建
+tags: hexo
 categories: 技术
 ---
 
@@ -23,7 +23,7 @@ node.js/git.exe可在[度盘](https://pan.baidu.com/s/1ZLkLG6TpKPOYR6Iy5JtoMQ)�
 3. 安装nodepad++，一路默认即可！
 
 安装后在任意文件夹点击右键可出现下图：
-![git bash here](1.jpg)
+![1.jpg](https://i.loli.net/2019/10/24/Tfw5QOo6Yb34Sph.jpg)
 
 ### 安装hexo及npm组件
 
@@ -36,7 +36,7 @@ npm i hexo-cli -g
 ```
 
 >**坑1**： 如果在bash命令行中无法运行npm相关命令，检查电脑全局环境变量配置
-> ![](2.jpg)
+> ![2.jpg](https://i.loli.net/2019/10/24/ZxUKV5WJCn2jYFE.jpg)
 
 4. 初始化hexo环境，即可开始进行hexo博客的本地撰写（hexo g）和预览（hexo s）
 
@@ -64,7 +64,7 @@ cat ~/.ssh/id_rsa.pub
 ssh的生成一路enter即可！
 
 - 复制命令行中出现的密钥代码，粘贴到Github网站>头像>setting>SSH and GPG keys>SSH Keys，新建，标题任意，内容为命令行中带代码。
-![](3.png)
+![3.png](https://i.loli.net/2019/10/24/QOr1MdcwZhNqyK8.png))
 
 - 验证是否成功
 ``` javascript

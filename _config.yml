@@ -6,14 +6,14 @@
 title: 空山新雨
 subtitle: 空山新雨后，天气晚来秋
 description: 生活 | 科技 | 统计分析
-keywords: 统计分析
+keywords: 
 author: mountain
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://mountaintai.github.io
 root: /
 permalink: :title.html
 permalink_defaults:
