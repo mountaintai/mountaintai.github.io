@@ -111,8 +111,9 @@ sitemap:
   path: sitemap.xml
 baidusitemap:
   path: baidusitemap.xml
-  
- nofollow:
-  enable: true
-  exclude: # 例外的链接，可将友情链接放置此处
  
+ 
+ 
+ 
+nofollow:
+  enable: true
