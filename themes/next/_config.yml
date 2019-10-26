@@ -437,7 +437,7 @@ font:
   enable: true
 
   # Uri of fonts host, e.g. //fonts.googleapis.com (Default).
-  host: https://fonts.loli.net
+  host:
 
   # Font options:
   # `external: true` will load this font family from `host` above.
@@ -447,8 +447,8 @@ font:
   # Global font settings used for all elements inside <body>.
   global:
     external: true
-    family: Noto Serif SC
-    size: 16px
+    family: EB Garamond
+    size:
 
   # Font settings for site title (.site-title).
   title:

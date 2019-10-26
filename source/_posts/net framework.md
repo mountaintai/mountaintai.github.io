@@ -16,13 +16,13 @@ tags: 技术
 ### 操作步骤
 
 1. 加载win10.iso系统镜像。
-![nfw1.png](https://i.loli.net/2019/10/24/8gpl25mxo6SBXdn.png)
+![加载镜像](nfw1.png)
 
 2. 打开powershell（管理员），复制代码 ，**注意代码中E的替换**
-![nfw2.png](https://i.loli.net/2019/10/24/rkEHSIFmlvPjiNW.png)
+![Powershell](nfw2.png)
 
 3. 运行代码即可
-![nfw3.png](https://i.loli.net/2019/10/24/yjc3DJrBEHvsNf5.png)
+![运行代码](nfw3.png)
 
 ### 更多操作
 
