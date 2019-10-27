@@ -1,6 +1,7 @@
 ---
-title: 如何解决win10 Net framework 安装失败的问题
-tags: 技术
+title: 如何解决win10 Net framework3.5 安装失败的问题
+tags: Windows
+categories: 技术
 ---
 
 
@@ -16,13 +17,13 @@ tags: 技术
 ### 操作步骤
 
 1. 加载win10.iso系统镜像。
-![加载镜像](nfw1.png)
+![](http://pzx8ezizb.bkt.clouddn.com/nfw1.png)
 
 2. 打开powershell（管理员），复制代码 ，**注意代码中E的替换**
-![Powershell](nfw2.png)
+![](http://pzx8ezizb.bkt.clouddn.com/nfw2.png)
 
 3. 运行代码即可
-![运行代码](nfw3.png)
+![](http://pzx8ezizb.bkt.clouddn.com/nfw3.png)
 
 ### 更多操作
 

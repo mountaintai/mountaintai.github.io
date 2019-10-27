@@ -1,8 +1,9 @@
 ---
 title: github/hexo博客入坑指南
 date: 2019-10-22 21:27:29
-tags: hexo 搭建
+tags: hexo
 categories: 技术
+keywords: Hexo搭建 优化
 ---
 
 感谢这个互联网时代，可以让每个人自由发挥！也感谢这个时代的大神，让小白可以拥有自己的博客！

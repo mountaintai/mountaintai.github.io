@@ -1,7 +1,7 @@
 ---
   title: PVE下的软路由配置
   tag: 软路由
-  categirous: 技术
+  categories: 技术
 ---
 
 PVE是一个虚拟机平台，相对于Windows下的虚拟机来说，PVE是直接建立在硬件上的虚拟机平台。之后在PVE上可以虚拟出各种操作系统。PVE对系统配置要求较低，可以应用在比较老旧的平台上。

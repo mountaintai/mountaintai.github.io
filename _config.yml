@@ -15,10 +15,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://mountaintai.github.io
 root: /
-permalink: archives/:abbrlink.html
-abbrlink:
-  alg: crc32
-  rep: hex
+permalink: :title.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing index.html from permalinks
