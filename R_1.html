@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 4.0.0">
+<meta name="google-site-verification" content="PasP6u2cKM50MZCsuDqjnVB35VrIpGaw3ETQfMVjaVo" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.1">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.1">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.1">
@@ -50,15 +51,17 @@
   };
 </script>
 
-  <meta name="description" content="生活 | 科技 | 统计分析">
-<meta property="og:type" content="website">
-<meta property="og:title" content="空山新雨">
-<meta property="og:url" content="http:&#x2F;&#x2F;mountaintai.github.io&#x2F;tags&#x2F;%E5%9B%BD%E5%AD%A6&#x2F;index.html">
+  <meta name="description" content="前言R语言轻便、简单、又开源。强大的统计和作图备受科研人员喜爱。空间管理不同的分析项目用不同的文件夹管理，是一个不错的选择。通过一系列命令，可以完成空间的定向，数据的读取、数据加载、数据保存，命令保存等操作。在任何项目开始前运行下面命令可以为您保持一个相对独立的工作环境。getwd()  当前工作目录">
+<meta name="keywords" content="R Data_cleaning">
+<meta property="og:type" content="article">
+<meta property="og:title" content="R学习笔记（一）">
+<meta property="og:url" content="https:&#x2F;&#x2F;mountaintai.github.io&#x2F;R_1.html">
 <meta property="og:site_name" content="空山新雨">
-<meta property="og:description" content="生活 | 科技 | 统计分析">
+<meta property="og:description" content="前言R语言轻便、简单、又开源。强大的统计和作图备受科研人员喜爱。空间管理不同的分析项目用不同的文件夹管理，是一个不错的选择。通过一系列命令，可以完成空间的定向，数据的读取、数据加载、数据保存，命令保存等操作。在任何项目开始前运行下面命令可以为您保持一个相对独立的工作环境。getwd()  当前工作目录">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-11-13T09:08:54.105Z">
 <meta name="twitter:card" content="summary">
-  <link rel="canonical" href="http://mountaintai.github.io/tags/%E5%9B%BD%E5%AD%A6/">
+  <link rel="canonical" href="https://mountaintai.github.io/R_1">
 
 
 <script id="page-configurations">
@@ -66,14 +69,24 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>标签: 国学 | 空山新雨</title>
+  <title>R学习笔记（一） | 空山新雨</title>
   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150905915-1"></script>
+    <script>
+      var host = window.location.hostname;
+      if (host !== "localhost" || !true) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-150905915-1');
+      }
+    </script>
 
 
 
@@ -122,7 +135,8 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-        <p class="site-subtitle">空山新雨后，天气晚来秋</p>
+        <h1 class="site-subtitle" itemprop="description">空山新雨后，天气晚来秋</h1>
+      
   </div>
 
   <div class="site-nav-toggle">
@@ -161,6 +175,11 @@
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-keywords">
+
+    <a href="/keywords/" rel="section"><i class="fa fa-fw fa-key"></i>关键词</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -209,50 +228,182 @@
           <div class="content">
             
 
+  <div class="posts-expand">
+      
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h1 class="collection-header">国学
-          <small>标签</small>
-        </h1>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mountaintai.github.io/R_1.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mountain">
+      <meta itemprop="description" content="生活 | 科技 | 统计分析">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="空山新雨">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          R学习笔记（一）
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-13 17:09:37 / 修改时间：17:08:54" itemprop="dateCreated datePublished" datetime="2019-11-13T17:09:37+08:00">2019-11-13</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%90/" itemprop="url" rel="index">
+                    <span itemprop="name">统计分析</span>
+                  </a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.7k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>R语言轻便、简单、又开源。强大的统计和作图备受科研人员喜爱。</p><h2 id="空间管理"><a href="#空间管理" class="headerlink" title="空间管理"></a>空间管理</h2><p>不同的分析项目用不同的文件夹管理，是一个不错的选择。通过一系列命令，可以完成空间的定向，数据的读取、数据加载、数据保存，命令保存等操作。在任何项目开始前运行下面命令可以为您保持一个相对独立的工作环境。</p><p><code>getwd()  当前工作目录</code></p><a id="more"></a>
+
+
+<p><code>setwd() 更改工作目录</code></p>
+<p><code>save.image(&quot;myfiles&quot;) 保存工作空间</code></p>
+<p><code>savehistory(&quot;myfiles&quot;) 保存历史命令</code></p>
+<p><code>load(&quot;myfiles&quot;) 加载空间</code></p>
+<p>把数据库文件放到setwd()的目录中，可以进行数据的读取等操作。工作完成后，保存空间和命令，下次打开之前用<strong>load()</strong>加载一下方可调用空间中既有的数据库。</p>
+<h2 id="读取Excel数据"><a href="#读取Excel数据" class="headerlink" title="读取Excel数据"></a>读取Excel数据</h2><p>首先把Excel转换成csv格式，用如下命令进行调用：</p>
+<p><code>mydata &lt;- read.table(&quot;xx.csv&quot;,header = TRUE,sep = &quot;,&quot;,row.names=&quot;自定义变量&quot;)</code></p>
+<p>注意head = <strong>TRUE要大写</strong>。</p>
+<h2 id="数据库结构分析"><a href="#数据库结构分析" class="headerlink" title="数据库结构分析"></a>数据库结构分析</h2><p><code>dim(mydata)  显示观测数（行）和变量数（列）</code></p>
+<p><code>str(mydata)  显示数据库中每个变量的性质和赋值</code></p>
+<p><code>summary(mydata) 概括数据库，定性变量显示频率，定量变量显示均值等</code></p>
+<p><code>names(mydata)  显示数据库中的所有变量名</code></p>
+<p><code>fix(mydata)</code>  显示一个可视化的数据框</p>
+<h2 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h2><ul>
+<li>创建新变量</li>
+</ul>
+<p><code>mydata &lt;- transform(mydata,sumx = x1 + x2,meanx =  (x1+x2)/2)</code></p>
+<ul>
+<li>变量重命名</li>
+</ul>
+<p><code>names(mydata)[2]  &lt;- &quot;newname&quot; 2指的是变量在数据库中的第几列，可以通过names命令查看</code> </p>
+<p><code>names(mydata)[4:9] &lt;- c(&quot;new1&quot;,&quot;new2&quot;,...) 批量重命名</code></p>
+<ul>
+<li>缺失值的处理</li>
+</ul>
+<p><code>mydata$age[mydata$age == 99] &lt;- NA  重编码</code></p>
+<p><code>newdata &lt;- na.omit(mydata)  newdata中仅含有完整数据</code></p>
+<p><code>z &lt;- sum(x, na.rm = TRUE)  某函数分析时，na.rm = TRUE忽略缺失值,可查阅help，看此函数是否有该选项</code></p>
+<ul>
+<li><p>数据集选子集</p>
+<ul>
+<li>选入变量</li>
+</ul>
+<p><code>newdata &lt;- mydata[,c(5:10)]  选取第5到10列变量</code></p>
+<p>或：</p>
+<p><code>myvars &lt;- c(&quot;var1&quot;,&quot;var2&quot;,&quot;var3&quot;,...)   生成需要保留变量的向量</code></p>
+<p><code>newdata &lt;- mydata[myvars]  直接输入，选取特定变量</code></p>
+<!--myvars <- names(yancao)[5:10]  names(yancao)生成一个包含所有变量的向量，然后可以用向量定位的方式去进行下面的定位环节。此代码的意思就是选取生成myvars，包含mydata第5到第10个变量-->
+
+<ul>
+<li>剔除变量</li>
+</ul>
+<p><code>myvars &lt;- names(mydata) %in% c(&quot;var1&quot;,&quot;var2&quot;,...)    var1, var2是要排除的变量</code></p>
+<p><code>newdata &lt;- mydata[!myvars]  !是逻辑反义</code></p>
+<p>或</p>
+<p><code>newdata &lt;- mydata[c(-2,-4,-5)]   -2,-4,-5为names(mydata)后显示的变量位置</code></p>
+<ul>
+<li>选取观测</li>
+</ul>
+<p><code>newdata &lt;- mydata[1:10,]</code></p>
+<p>特定条件选择</p>
+<p><code>newdata &lt;- mydata[which(sex == &quot;M&quot; &amp; age &gt;18),]</code></p>
+<p>OR </p>
+<p><code>attach(mydata)</code></p>
+<p><code>newdata &lt;- mydata[which(sex == &quot;M&quot; &amp; age &gt;18),]</code></p>
+<p><code>detach(mydata)</code></p>
+<ul>
+<li>高级技巧subset函数</li>
+</ul>
+<p><code>newdata &lt;- subset(mydata, conditon1 &amp;or| condition2 &amp;or| condition3 &amp;or| ... , select=c(&quot;var1&quot;,&quot;var2&quot;,...,&quot;varN&quot;))</code>    </p>
+<p>其中select=c(“var1”,”var2”,…,”varN”)可写成select=var1:varN</p>
+</li>
+</ul>
+<p>未完待续~</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-10-19T08:38:42+08:00"
-              content="2019-10-19">
-          10-19
-        </time>
-      </div>
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/R-Data-cleaning/" rel="tag"> R Data_cleaning</a>
+          </div>
 
-      <h2 class="post-title">
-          <a class="post-title-link" href="/daxue.html" itemprop="url">
-            <span itemprop="name">大学</span>
-          </a>
-      </h2>
+        
 
-    </header>
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/Openwrt.html" rel="next" title="PVE下的软路由配置">
+                  <i class="fa fa-chevron-left"></i> PVE下的软路由配置
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+            </div>
+          </div>
+      </footer>
+    
   </article>
+  
+  
+  
 
-    </div>
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
@@ -281,6 +432,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#空间管理"><span class="nav-text">空间管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#读取Excel数据"><span class="nav-text">读取Excel数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库结构分析"><span class="nav-text">数据库结构分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库操作"><span class="nav-text">数据库操作</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -309,7 +461,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -338,7 +490,8 @@
 
       </div>
 	  
-       <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=541960310&auto=1&height=66"></iframe>
+       
+       <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=864634875&auto=1&height=66"></iframe>
 
     </div>
   </aside>
@@ -364,12 +517,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">3k</span>
+    <span title="站点总字数">5k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">3 分钟</span>
+    <span title="站点阅读时长">4 分钟</span>
 </div>
 
 <div id="days"></div>

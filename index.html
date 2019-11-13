@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 4.0.0">
+<meta name="google-site-verification" content="PasP6u2cKM50MZCsuDqjnVB35VrIpGaw3ETQfMVjaVo" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.1">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.1">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.1">
@@ -51,14 +52,15 @@
 </script>
 
   <meta name="description" content="生活 | 科技 | 统计分析">
+<meta name="keywords" content="统计分析">
 <meta property="og:type" content="website">
 <meta property="og:title" content="空山新雨">
-<meta property="og:url" content="http:&#x2F;&#x2F;mountaintai.github.io&#x2F;index.html">
+<meta property="og:url" content="https:&#x2F;&#x2F;mountaintai.github.io&#x2F;index.html">
 <meta property="og:site_name" content="空山新雨">
 <meta property="og:description" content="生活 | 科技 | 统计分析">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
-  <link rel="canonical" href="http://mountaintai.github.io/">
+  <link rel="canonical" href="https://mountaintai.github.io/">
 
 
 <script id="page-configurations">
@@ -74,6 +76,16 @@
 
   <title>空山新雨</title>
   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150905915-1"></script>
+    <script>
+      var host = window.location.hostname;
+      if (host !== "localhost" || !true) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-150905915-1');
+      }
+    </script>
 
 
 
@@ -122,7 +134,8 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-        <p class="site-subtitle">空山新雨后，天气晚来秋</p>
+        <h1 class="site-subtitle" itemprop="description">空山新雨后，天气晚来秋</h1>
+      
   </div>
 
   <div class="site-nav-toggle">
@@ -161,6 +174,11 @@
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-keywords">
+
+    <a href="/keywords/" rel="section"><i class="fa fa-fw fa-key"></i>关键词</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -214,7 +232,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://mountaintai.github.io/Github-control.html">
+    <link itemprop="mainEntityOfPage" href="https://mountaintai.github.io/R_1.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -226,10 +244,10 @@
       <meta itemprop="name" content="空山新雨">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
+        <h2 class="post-title" itemprop="name headline">
           
-            <a href="/Github-control.html" class="post-title-link" itemprop="url">Hexo博客的多终端管理常用命令，Push & Pull</a>
-        </h1>
+            <a href="/R_1.html" class="post-title-link" itemprop="url">R学习笔记（一）</a>
+        </h2>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -239,7 +257,18 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2019-10-23 16:32:37 / 修改时间：17:11:00" itemprop="dateCreated datePublished" datetime="2019-10-23T16:32:37+08:00">2019-10-23</time>
+              <time title="创建时间：2019-11-13 17:09:37 / 修改时间：17:08:54" itemprop="dateCreated datePublished" datetime="2019-11-13T17:09:37+08:00">2019-11-13</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%90/" itemprop="url" rel="index">
+                    <span itemprop="name">统计分析</span>
+                  </a>
+                </span>
             </span>
 
           <br>
@@ -248,14 +277,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>933</span>
+              <span>1.7k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -267,14 +296,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Github page可以静态托管hexo生成的网页文件，因此可以把Hexo分割成<strong>静态网页文件</strong>和<strong>本地环境文件</strong>。我们就是要<strong>利用Github的分布式管理功能</strong>把本地环境文件托管到Github仓库中的一个分支上（hexo），以实现master存放静态网页文件，hexo存放本地环境文件。</p><h2 id="条件准备"><a href="#条件准备" class="headerlink" title="条件准备"></a>条件准备</h2><h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><ul>
-<li>无论在任何终端，进行同步更新操作的前提就是部署工作环境，即需要安装node.js和git.exe。</li>
-<li>已经与Github完成了对接和SSH认证，具体看<a href="https://mountaintai.github.io/2019/10/22/hexo-enter/">入坑指南</a></li>
-<li>在Github上新建分支Hexo，并设定为默认分支</li>
-</ul>
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>R语言轻便、简单、又开源。强大的统计和作图备受科研人员喜爱。</p><h2 id="空间管理"><a href="#空间管理" class="headerlink" title="空间管理"></a>空间管理</h2><p>不同的分析项目用不同的文件夹管理，是一个不错的选择。通过一系列命令，可以完成空间的定向，数据的读取、数据加载、数据保存，命令保存等操作。在任何项目开始前运行下面命令可以为您保持一个相对独立的工作环境。</p><p><code>getwd()  当前工作目录</code></p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/Github-control.html#more" rel="contents">
+              <a class="btn" href="/R_1.html#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -298,7 +323,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://mountaintai.github.io/hexo-enter.html">
+    <link itemprop="mainEntityOfPage" href="https://mountaintai.github.io/Openwrt.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -310,10 +335,193 @@
       <meta itemprop="name" content="空山新雨">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Openwrt.html" class="post-title-link" itemprop="url">PVE下的软路由配置</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-10-28 08:21:12" itemprop="dateCreated datePublished" datetime="2019-10-28T08:21:12+08:00">2019-10-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>802</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>PVE是一个虚拟机平台，相对于Windows下的虚拟机来说，PVE是直接建立在硬件上的虚拟机平台。之后在PVE上可以虚拟出各种操作系统。PVE对系统配置要求较低，可以应用在比较老旧的平台上。</p><p>感谢BILL MIKE大神，让小白重新认识了路由，以下操作方法均来自BILL Mike 大神。我仅作简单记录，方便自已以后留档查看。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/Openwrt.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mountaintai.github.io/net%20framework.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mountain">
+      <meta itemprop="description" content="生活 | 科技 | 统计分析">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="空山新雨">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/net%20framework.html" class="post-title-link" itemprop="url">如何解决win10 Net framework3.5 安装失败的问题</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-10-28 08:21:12" itemprop="dateCreated datePublished" datetime="2019-10-28T08:21:12+08:00">2019-10-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>319</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>精简版的win10经常缺失各种net framework框架，而net framework框架又是许多程序运行所必备的组件，因此解决此问题至关重要!</p><h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><ul>
+<li>一个完整的win10安装镜像，可以从<a href="https://msdn.itellyou.cn/" target="_blank" rel="noopener">MSDN_i tell you</a>下载。</li>
+<li>一段代码，<strong>注意此处的E需要修改成你电脑中加载镜像后的镜像盘符</strong>.<br><code>dism.exe /online /enable-feature /featurename:netfx3 /Source:E:\sources\sxs</code> </li>
+</ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/net%20framework.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://mountaintai.github.io/hexo-enter.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="mountain">
+      <meta itemprop="description" content="生活 | 科技 | 统计分析">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="空山新雨">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
           
             <a href="/hexo-enter.html" class="post-title-link" itemprop="url">github/hexo博客入坑指南</a>
-        </h1>
+        </h2>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -329,7 +537,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-24 09:25:20" itemprop="dateModified" datetime="2019-10-24T09:25:20+08:00">2019-10-24</time>
+                <time title="修改时间：2019-10-28 08:21:12" itemprop="dateModified" datetime="2019-10-28T08:21:12+08:00">2019-10-28</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -400,7 +608,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://mountaintai.github.io/net%20framework.html">
+    <link itemprop="mainEntityOfPage" href="https://mountaintai.github.io/hello-world.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -412,99 +620,10 @@
       <meta itemprop="name" content="空山新雨">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/net%20framework.html" class="post-title-link" itemprop="url">如何解决win10 Net framework 安装失败的问题</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-10-22 14:31:27" itemprop="dateCreated datePublished" datetime="2019-10-22T14:31:27+08:00">2019-10-22</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-24 09:23:53" itemprop="dateModified" datetime="2019-10-24T09:23:53+08:00">2019-10-24</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>319</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>精简版的win10经常缺失各种net framework框架，而net framework框架又是许多程序运行所必备的组件，因此解决此问题至关重要!</p><h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><ul>
-<li>一个完整的win10安装镜像，可以从<a href="https://msdn.itellyou.cn/" target="_blank" rel="noopener">MSDN_i tell you</a>下载。</li>
-<li>一段代码，<strong>注意此处的E需要修改成你电脑中加载镜像后的镜像盘符</strong>.<br><code>dism.exe /online /enable-feature /featurename:netfx3 /Source:E:\sources\sxs</code> </li>
-</ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/net%20framework.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://mountaintai.github.io/hello-world.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="mountain">
-      <meta itemprop="description" content="生活 | 科技 | 统计分析">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="空山新雨">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
+        <h2 class="post-title" itemprop="name headline">
           
             <a href="/hello-world.html" class="post-title-link" itemprop="url">Hello World</a>
-        </h1>
+        </h2>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -550,97 +669,6 @@
             </div>
           <!--/noindex-->
         
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://mountaintai.github.io/daxue.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="mountain">
-      <meta itemprop="description" content="生活 | 科技 | 统计分析">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="空山新雨">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/daxue.html" class="post-title-link" itemprop="url">大学</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-10-19 08:38:42" itemprop="dateCreated datePublished" datetime="2019-10-19T08:38:42+08:00">2019-10-19</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-21 15:58:17" itemprop="dateModified" datetime="2019-10-21T15:58:17+08:00">2019-10-21</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%9B%BD%E5%AD%A6/" itemprop="url" rel="index">
-                    <span itemprop="name">国学</span>
-                  </a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>79</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="第一篇"><a href="#第一篇" class="headerlink" title="第一篇"></a>第一篇</h2><p>大 学 之 道，在 明 明 德，在 亲 民，在止于至善。知止而后有定，定而后能静，静而后能安，安而后能虑，虑而后能得。物有本末，事有终是，知所先后，则近道矣！<br><img src="https://cdn.jsdelivr.net/gh/botkoowo/picture@master/static_files/botkoowo/img/large4bed2e738bd4b31c3afdebfa8cd6277f9f2ff8aa.jpg" alt="大学"></p>
-<p>未完待续！</p>
-
       
     </div>
 
@@ -715,7 +743,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -744,7 +772,8 @@
 
       </div>
 	  
-       <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=541960310&auto=1&height=66"></iframe>
+       
+       <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=864634875&auto=1&height=66"></iframe>
 
     </div>
   </aside>
@@ -770,12 +799,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">3k</span>
+    <span title="站点总字数">5k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">3 分钟</span>
+    <span title="站点阅读时长">4 分钟</span>
 </div>
 
 <div id="days"></div>
