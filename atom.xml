@@ -40,29 +40,6 @@
   </entry>
   
   <entry>
-    <title>PVE下的软路由配置</title>
-    <link href="https://mountaintai.github.io/Openwrt.html"/>
-    <id>https://mountaintai.github.io/Openwrt.html</id>
-    <published>2019-10-28T00:21:12.628Z</published>
-    <updated>2019-11-13T09:19:58.921Z</updated>
-    
-    <content type="html"><![CDATA[<p>PVE是一个虚拟机平台，相对于Windows下的虚拟机来说，PVE是直接建立在硬件上的虚拟机平台。之后在PVE上可以虚拟出各种操作系统。PVE对系统配置要求较低，可以应用在比较老旧的平台上。</p><p>感谢BILL MIKE大神，让小白重新认识了路由，以下操作方法均来自BILL Mike 大神。我仅作简单记录，方便自已以后留档查看。</p><a id="more"></a><h3 id="软件环境"><a href="#软件环境" class="headerlink" title="软件环境"></a>软件环境</h3><p>进行以下操作前需要有一个硬件及软件环境，具体我是参考的BILL MIKE的视频<a href="https://pan.baidu.com/s/1PobK1yPB-jMbRhOtUX76-Q" target="_blank" rel="noopener">网盘</a>。</p><ul><li>硬件已经安装PVE底层虚拟系统。</li><li>PVE建立好虚拟机。</li><li>软路由固件</li><li>WinSCP</li></ul><h3 id="PVE平台上的操作"><a href="#PVE平台上的操作" class="headerlink" title="PVE平台上的操作"></a>PVE平台上的操作</h3><ul><li>WinSCP进入虚拟机后台文件管理目录（SFTP模式）</li></ul><blockquote><p>PVE的后台地址：安装PVE时候设定的（192.168.2.1）<br>账号：默认root；<br>密码：你自己设定的后台登陆密码<br>其他默认<br><img src="http://pzx8ezizb.bkt.clouddn.com/1.jpg" alt></p></blockquote><ul><li>进入后台的root目录，然后把本地的固件拖到root目录下。<strong>注意</strong>拖拽之前，缩短固件名称（如改成Jump.img）方面后面操作。</li><li>进入PVE网页管理界面，进入shell，运行如下命令<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod +x img2kvm</span><br><span class="line">./img2kvm  jump.img(镜像名称） <span class="number">555</span>（pve虚拟机名称） vm<span class="number">-555</span>-disk<span class="number">-2</span>（转化后名称）</span><br></pre></td></tr></table></figure><img src="http://pzx8ezizb.bkt.clouddn.com/11.jpg" alt></li></ul><h3 id="虚拟机中的操作"><a href="#虚拟机中的操作" class="headerlink" title="虚拟机中的操作"></a>虚拟机中的操作</h3><p>上述步骤，会在指定虚拟机生成一个磁盘。注意观察，刚开始处在未加载状态。<br><img src="http://pzx8ezizb.bkt.clouddn.com/2.jpg" alt></p><ul><li>转换完成后进入建立好的虚拟机，可以看到一个新的磁盘disk-1。</li><li>关闭虚拟机，并把disk-0分离，添加disk-1</li><li>运行虚拟机，进入控制台，输入如下命令<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/config/network   修改路由ip地址</span><br><span class="line">passwd   修改路由器登陆密码（默认用户名root）</span><br></pre></td></tr></table></figure><blockquote><p><strong>Vi编辑器操作方法</strong><br>-i：修改ip，ESC：退出编辑，:wq 保存退出vi<br>reboot重启路由后，输入ip地址进入后台管理界面</p></blockquote></li></ul><h3 id="路由器设置"><a href="#路由器设置" class="headerlink" title="路由器设置"></a>路由器设置</h3><p>路由器设置前提需要明确路由器充当的定位，此处设置只针对<strong>旁路由</strong>。具体设置见下图</p><p><img src="http://pzx8ezizb.bkt.clouddn.com/3.jpg" alt><br><img src="http://pzx8ezizb.bkt.clouddn.com/4.jpg" alt><br><img src="http://pzx8ezizb.bkt.clouddn.com/5.jpg" alt></p><h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>攻略简单，以提示自己为主！如有问题欢迎邮件咨询。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;PVE是一个虚拟机平台，相对于Windows下的虚拟机来说，PVE是直接建立在硬件上的虚拟机平台。之后在PVE上可以虚拟出各种操作系统。PVE对系统配置要求较低，可以应用在比较老旧的平台上。&lt;/p&gt;&lt;p&gt;感谢BILL MIKE大神，让小白重新认识了路由，以下操作方法均来自BILL Mike 大神。我仅作简单记录，方便自已以后留档查看。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="https://mountaintai.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="软路由" scheme="https://mountaintai.github.io/tags/%E8%BD%AF%E8%B7%AF%E7%94%B1/"/>
-    
-  </entry>
-  
-  <entry>
     <title>如何解决win10 Net framework3.5 安装失败的问题</title>
     <link href="https://mountaintai.github.io/net%20framework.html"/>
     <id>https://mountaintai.github.io/net framework.html</id>
@@ -85,6 +62,29 @@
     
     
       <category term="Windows" scheme="https://mountaintai.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PVE下的软路由配置</title>
+    <link href="https://mountaintai.github.io/Openwrt.html"/>
+    <id>https://mountaintai.github.io/Openwrt.html</id>
+    <published>2019-10-28T00:21:12.628Z</published>
+    <updated>2019-11-13T09:19:58.921Z</updated>
+    
+    <content type="html"><![CDATA[<p>PVE是一个虚拟机平台，相对于Windows下的虚拟机来说，PVE是直接建立在硬件上的虚拟机平台。之后在PVE上可以虚拟出各种操作系统。PVE对系统配置要求较低，可以应用在比较老旧的平台上。</p><p>感谢BILL MIKE大神，让小白重新认识了路由，以下操作方法均来自BILL Mike 大神。我仅作简单记录，方便自已以后留档查看。</p><a id="more"></a><h3 id="软件环境"><a href="#软件环境" class="headerlink" title="软件环境"></a>软件环境</h3><p>进行以下操作前需要有一个硬件及软件环境，具体我是参考的BILL MIKE的视频<a href="https://pan.baidu.com/s/1PobK1yPB-jMbRhOtUX76-Q" target="_blank" rel="noopener">网盘</a>。</p><ul><li>硬件已经安装PVE底层虚拟系统。</li><li>PVE建立好虚拟机。</li><li>软路由固件</li><li>WinSCP</li></ul><h3 id="PVE平台上的操作"><a href="#PVE平台上的操作" class="headerlink" title="PVE平台上的操作"></a>PVE平台上的操作</h3><ul><li>WinSCP进入虚拟机后台文件管理目录（SFTP模式）</li></ul><blockquote><p>PVE的后台地址：安装PVE时候设定的（192.168.2.1）<br>账号：默认root；<br>密码：你自己设定的后台登陆密码<br>其他默认<br><img src="http://pzx8ezizb.bkt.clouddn.com/1.jpg" alt></p></blockquote><ul><li>进入后台的root目录，然后把本地的固件拖到root目录下。<strong>注意</strong>拖拽之前，缩短固件名称（如改成Jump.img）方面后面操作。</li><li>进入PVE网页管理界面，进入shell，运行如下命令<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod +x img2kvm</span><br><span class="line">./img2kvm  jump.img(镜像名称） <span class="number">555</span>（pve虚拟机名称） vm<span class="number">-555</span>-disk<span class="number">-2</span>（转化后名称）</span><br></pre></td></tr></table></figure><img src="http://pzx8ezizb.bkt.clouddn.com/11.jpg" alt></li></ul><h3 id="虚拟机中的操作"><a href="#虚拟机中的操作" class="headerlink" title="虚拟机中的操作"></a>虚拟机中的操作</h3><p>上述步骤，会在指定虚拟机生成一个磁盘。注意观察，刚开始处在未加载状态。<br><img src="http://pzx8ezizb.bkt.clouddn.com/2.jpg" alt></p><ul><li>转换完成后进入建立好的虚拟机，可以看到一个新的磁盘disk-1。</li><li>关闭虚拟机，并把disk-0分离，添加disk-1</li><li>运行虚拟机，进入控制台，输入如下命令<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/config/network   修改路由ip地址</span><br><span class="line">passwd   修改路由器登陆密码（默认用户名root）</span><br></pre></td></tr></table></figure><blockquote><p><strong>Vi编辑器操作方法</strong><br>-i：修改ip，ESC：退出编辑，:wq 保存退出vi<br>reboot重启路由后，输入ip地址进入后台管理界面</p></blockquote></li></ul><h3 id="路由器设置"><a href="#路由器设置" class="headerlink" title="路由器设置"></a>路由器设置</h3><p>路由器设置前提需要明确路由器充当的定位，此处设置只针对<strong>旁路由</strong>。具体设置见下图</p><p><img src="http://pzx8ezizb.bkt.clouddn.com/3.jpg" alt><br><img src="http://pzx8ezizb.bkt.clouddn.com/4.jpg" alt><br><img src="http://pzx8ezizb.bkt.clouddn.com/5.jpg" alt></p><h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>攻略简单，以提示自己为主！如有问题欢迎邮件咨询。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;PVE是一个虚拟机平台，相对于Windows下的虚拟机来说，PVE是直接建立在硬件上的虚拟机平台。之后在PVE上可以虚拟出各种操作系统。PVE对系统配置要求较低，可以应用在比较老旧的平台上。&lt;/p&gt;&lt;p&gt;感谢BILL MIKE大神，让小白重新认识了路由，以下操作方法均来自BILL Mike 大神。我仅作简单记录，方便自已以后留档查看。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://mountaintai.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="软路由" scheme="https://mountaintai.github.io/tags/%E8%BD%AF%E8%B7%AF%E7%94%B1/"/>
     
   </entry>
   
